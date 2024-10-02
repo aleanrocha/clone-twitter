@@ -18,14 +18,14 @@ const NavItem = ({ icon, text }) => (
     className='flex items-center p-3
   rounded-full cursor-pointer hover:bg-gray-600 transition duration-200'
   >
-    <FontAwesomeIcon icon={icon} className='text-2xl m-auto xl:m-0 xl:mr-3' />
-    <p className='text-xl hidden xl:inline'>{text}</p>
+    <FontAwesomeIcon icon={icon} className='text-lg lg:text-2xl m-auto xl:m-0 xl:mr-3' />
+    <p className='text-md hidden xl:inline'>{text}</p>
   </div>
 )
 
 const Sidebar = () => {
   return (
-    <div className='w-20 xl:w-64 sticky top-0 px-2 h-screen'>
+    <div className='w-20 xl:w-64 sticky top-0 md:px-2 h-screen flex flex-col items-center md:block'>
       <FontAwesomeIcon
         icon={faTwitter}
         className='text-blue-400 text-3xl m-4'
@@ -43,11 +43,11 @@ const Sidebar = () => {
       </nav>
       <button
         type='button'
-        className='bg-blue-400 text-white rounded-full font-bold px-4 py-3  mt-4 w-full cursor-pointer'
+        className='bg-blue-400 text-white rounded-full font-bold p-1 md:px-4 md:py-3 mt-4 w-10 md:w-full cursor-pointer'
       >
         <FontAwesomeIcon
           icon={faFeatherAlt}
-          className=' text-2xl inline xl:hidden'
+          className='text-lg md:text-2xl inline xl:hidden'
         />
         <span className='hidden xl:inline'>Twitter</span>
       </button>

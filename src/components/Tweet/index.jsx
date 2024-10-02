@@ -33,21 +33,21 @@ const Tweet = ({ tweet }) => {
         <img
           src={tweet.avatar}
           alt='User avatar'
-          className='rounded-full w-12 h-12'
+          className='rounded-full w-10 h-10 md:w-12 md:h-12'
         />
         <div className='flex-1 w-full'>
           <div className='flex items-center justify-between'>
             <div>
               <span className='font-bold'>{tweet.name}</span>
-              <span className='text-gray-500 ml-2'>{tweet.username}</span>
-              <span className='text-gray-500 ml-2'>{tweet.time}</span>
+              <span className='text-gray-500 ml-2 text-sm md:text-lg'>{tweet.username}</span>
+              <span className='text-gray-500 ml-2 text-sm md:text-lg'>{tweet.time}</span>
             </div>
             <FontAwesomeIcon
               icon={faEllipsis}
               className='text-gray-500 cursor-pointer'
             />
           </div>
-          <p className='mt-2'>{tweet.content}</p>
+          <p className='mt-2 text-sm md:text-lg'>{tweet.content}</p>
           {tweet.image && (
             <img
               src={tweet.image}
